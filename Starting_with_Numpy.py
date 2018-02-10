@@ -99,6 +99,18 @@ print(x[4:])
 #from 4th to 6th position
 print(x[4:7])
 
+#return elements at even place
+print(x[::2])
+
+#return elements from first position step by two
+print(x[1::2])
+
+#reverse the array
+print(x[::-1])
+
+
+
+
 
 
 

@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 data = pd.DataFrame({'Country': ['Russia','Colombia','Chile','Equador','Nigeria'],
                     'Rank':[121,40,100,130,11]})
@@ -76,9 +77,15 @@ data.assign(new_variable=data['ounces']*10)
 data.drop('animal2',axis='columns',inplace=True)
 
 
+#imput missing values
+#series function from pandas are used to create arrays
+data=pd.Series([1,-222,32,932,32,43,-23])
 
+#replace 932 with NaN values
+data.replace(932,np.nan,inplace=True)
 
-
+#replace multiple at once
+data.replace([1,-222,-23],np.nan,inplace=True)
 
 
 

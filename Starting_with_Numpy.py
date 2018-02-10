@@ -117,8 +117,12 @@ y=[3,22,1]
 z=np.array([34,89,9])
 print(np.concatenate([x,y,z]))
 
+#use np.concatenate to create 2-dimensional arrays.
+grid=np.array([[1,2,3],[4,5,6]])
+print(np.concatenate([grid,grid]))
 
-
+#define row-wise or column-wise matrix via axis parameter
+print(np.concatenate([grid,grid],axis=1))
 
 
 

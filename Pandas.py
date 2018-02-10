@@ -72,6 +72,9 @@ data['animal2']=data.apply(meat_2_animal,axis='columns')
 data.assign(new_variable=data['ounces']*10)
 
 
+#remove variable
+data.drop('animal2',axis='columns',inplace=True)
+
 
 
 

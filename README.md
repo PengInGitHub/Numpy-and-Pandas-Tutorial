@@ -14,3 +14,4 @@ Practical Tutorial on Data Manipulation with Numpy and Pandas in Python</br>
 3.Numpy is most suitable for performing basic numerical computations such as mean, median, range, etc. Alongside, it also supports the creation of multi-dimensional arrays.</br>
 4.Numpy library can also be used to integrate C/C++ and Fortran code.</br>
 5.Remember, python is a zero indexing language unlike R where indexing starts at one.</br>
+6.The best part of learning pandas and numpy is the strong active community support you'll get from around the world.</br>

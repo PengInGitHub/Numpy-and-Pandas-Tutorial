@@ -86,6 +86,22 @@ x2[0,0]=122
 print("replace value at 0,0 index ",x2)
 
 
+#Array Slicing
+#access multiple or a range of elements from an array.
+
+x=np.arange(10)
+#from start to 4th position
+print(x[:5])
+
+#from 4th position to end
+print(x[4:])
+
+#from 4th to 6th position
+print(x[4:7])
+
+
+
+
 
 
 

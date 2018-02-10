@@ -42,3 +42,16 @@ print(np.random.normal(0,1,(3,3)))
 
 #create an identity matrix
 print(np.eye(3))
+
+#set a random seed
+np.random.seed(0)
+x1=np.random.randint(10,size=6) #one dimension
+print(x1)
+x2=np.random.randint(10,size=(3,4)) #one dimension
+print(x2)
+x3=np.random.randint(10,size=(3,4,5)) #one dimension
+print(x3)
+print(x3.ndim)
+print(x3.shape)
+print(x3.size)
+

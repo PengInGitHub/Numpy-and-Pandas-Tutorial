@@ -47,7 +47,7 @@ print(np.eye(3))
 np.random.seed(0)
 x1=np.random.randint(10,size=6) #one dimension
 print(x1)
-x2=np.random.randint(10,size=(3,4)) #one dimension
+x2=np.random.randint(10, size=(3,4)) #two dimension
 print(x2)
 x3=np.random.randint(10,size=(3,4,5)) #one dimension
 print(x3)
@@ -69,6 +69,16 @@ print(x1[4])
 
 #get the last value
 print(x1[-1])
+
+#get the second last value
+print(x1[-2])
+
+#in a multidimensional array, we need to specify row and column index
+#1st row and 2nd column value
+print("x2",x2)
+print("1st row and 2nd column value: ",x2[2,3])
+
+
 
 
 

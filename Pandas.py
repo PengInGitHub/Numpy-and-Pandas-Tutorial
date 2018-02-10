@@ -82,6 +82,7 @@ data.drop('animal2',axis='columns',inplace=True)
 data=pd.Series([1,-222,32,932,32,43,-23])
 
 #replace 932 with NaN values
+#np.nan is NaN
 data.replace(932,np.nan,inplace=True)
 
 #replace multiple at once

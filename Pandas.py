@@ -21,3 +21,6 @@ data.sort_values(by='ounces',ascending=True,inplace=False)
 data = pd.DataFrame({'k1':['one']*3 + ['two']*4, 'k2':[3,2,1,3,3,4,4]})
 data.sort_values(by='k2')
 data.drop_duplicates()
+
+#remove duplicates based on a particular column
+data.drop_duplicates(subset='k1')

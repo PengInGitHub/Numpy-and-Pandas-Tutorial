@@ -78,6 +78,8 @@ print(x1[-2])
 print("x2",x2)
 print("1st row and 2nd column value: ",x2[2,3])
 
+#3rd row and last value from the 3rd column
+print("3rd row and last value from the 3rd column: ",x2[2,-1])
 
 
 

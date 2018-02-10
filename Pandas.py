@@ -43,6 +43,35 @@ meat_to_animal = {
 'nova lox': 'salmon'
 }
 
+#Then use map function to map the dictionary's values to the keys
+data['animal'] = data['food'].map(str.lower).map(meat_to_animal)
+
+#alternative: use lambda and apply
+lower=lambda x:x.lower()
+data['food']=data['food'].apply(lower)
+
+def meat_2_animal(series):
+    if series['food']=='bacon':
+        return 'pig'
+    elif series['food']=='pulled pork':
+        return 'pig'
+    elif series['food']=='pastrami':
+        return 'cow'
+    elif series['food']=='corned beef':
+        return 'cow'
+    elif series['food']=='honey ham':
+        return 'pig'
+    else:
+        return 'salmon'
+
+data['animal2']=data.apply(meat_2_animal,axis='columns')
+
+
+
+
+
+
+
 
 
 

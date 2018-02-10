@@ -81,6 +81,10 @@ print("1st row and 2nd column value: ",x2[2,3])
 #3rd row and last value from the 3rd column
 print("3rd row and last value from the 3rd column: ",x2[2,-1])
 
+#replace value at 0,0 index
+x2[0,0]=122
+print("replace value at 0,0 index ",x2)
+
 
 
 

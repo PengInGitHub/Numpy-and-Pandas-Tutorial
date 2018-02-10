@@ -33,3 +33,6 @@ print(np.full((4,5),1.23))
 
 #create an array with a set sequence
 print(np.arange(0,20,4))
+
+#create an array of even space between the given range of values
+print(np.linspace(0,1,5))

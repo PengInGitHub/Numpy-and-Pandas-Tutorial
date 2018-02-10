@@ -93,7 +93,8 @@ data.replace([1,-222,-23],np.nan,inplace=True)
 #rename column names and axis (row names).
 data=pd.DataFrame(np.arange(12).reshape(3,4),index=['Ohio','Coorado','New York'],columns=['One','Two','Three','Four'])
 
-
+#Using rename function
+data.rename(columns={'One':'One_p'},inplace=True)
 
 
 

@@ -61,4 +61,15 @@ print(x3.size)
 x1=np.array([3,2,1,2,4,6,4,32])
 print(x1)
 
+#assess value to index zero
+print(x1[0])
+
+#assess fifth value
+print(x1[4])
+
+#get the last value
+print(x1[-1])
+
+
+
 

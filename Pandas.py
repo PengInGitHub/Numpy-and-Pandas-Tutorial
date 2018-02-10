@@ -24,3 +24,7 @@ data.drop_duplicates()
 
 #remove duplicates based on a particular column
 data.drop_duplicates(subset='k1')
+
+#categorize rows
+data = pd.DataFrame({'food': ['bacon', 'pulled pork', 'bacon', 'Pastrami','corned beef', 'Bacon', 'pastrami', 'honey ham','nova lox'],
+                 'ounces': [4, 3, 12, 6, 7.5, 8, 3, 5, 6]})

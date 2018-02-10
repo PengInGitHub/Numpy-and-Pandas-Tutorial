@@ -95,6 +95,7 @@ data=pd.DataFrame(np.arange(12).reshape(3,4),index=['Ohio','Coorado','New York']
 
 #Using rename function
 data.rename(columns={'One':'One_p'},inplace=True)
+data.rename(index={'Ohio':'SanF'},inplace=True)
 
 
 

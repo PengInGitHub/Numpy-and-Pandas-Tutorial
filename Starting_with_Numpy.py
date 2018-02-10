@@ -131,4 +131,44 @@ print(np.vstack([x,grid]))
 z=np.array([[3],[4]])
 print(np.hstack([grid,z]))
 
+#split the arrays based on pre-defined positions
+x=np.arange(10)
+x1,x2,x3=np.split(x,[3,8])
+print(x1,x2,x3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

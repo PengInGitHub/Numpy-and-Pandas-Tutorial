@@ -14,16 +14,22 @@ print(L)
 
 #List Comprehension
 #converting integers to string - this style of handling lists is known as list comprehension.
-#List comprehension offers a versatile way to handle list manipulations tasks easily.
+#list comprehension offers a versatile way to handle list manipulations tasks easily.
 S= [str(c) for c in L]
 print(S)
+
 print([type(i) for i in L])
 
 
 #Creating Arrays
 #Numpy arrays are homogeneous in nature, i.e., they comprise one data type (integer, float, double, etc.) unlike lists.
 print(np.zeros(10,dtype='int'))
+
 #creating a 3 row x 5 column matrix
 print(np.ones((3,5),dtype='int'))
+
 #creating a matrix with a predefined value
 print(np.full((4,5),1.23))
+
+#create an array with a set sequence
+print(np.arange(0,20,4))

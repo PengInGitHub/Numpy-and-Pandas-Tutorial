@@ -27,12 +27,13 @@ data.drop_duplicates()
 data.drop_duplicates(subset='k1')
 
 
+#Create A New Variable
 #categorize a variable
 #create a new column based on the values of another column
 data = pd.DataFrame({'food': ['bacon', 'pulled pork', 'bacon', 'Pastrami','corned beef', 'Bacon', 'pastrami', 'honey ham','nova lox'],
                  'ounces': [4, 3, 12, 6, 7.5, 8, 3, 5, 6]})
 
-#create a new variable
+#Alternative 1: dict, map
 #Firstly create a dictionary to map the known variable values to the unknown feature dict(value:type)
 meat_to_animal = {
 'bacon': 'pig',
@@ -46,6 +47,7 @@ meat_to_animal = {
 #Then use map function to map the dictionary's values to the keys
 data['animal'] = data['food'].map(str.lower).map(meat_to_animal)
 
+#Alternative 2: lambda, self-defined method, apply
 #alternative: use lambda and apply
 lower=lambda x:x.lower()
 data['food']=data['food'].apply(lower)
@@ -66,7 +68,8 @@ def meat_2_animal(series):
 
 data['animal2']=data.apply(meat_2_animal,axis='columns')
 
-
+#Alternative 3: assign function
+data.assign(new_variable=data['ounces']*10)
 
 
 

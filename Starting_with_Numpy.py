@@ -39,3 +39,6 @@ print(np.linspace(0,1,5))
 
 #create a 3x3 array with mean 0 and standard deviation 1 in a given dimension
 print(np.random.normal(0,1,(3,3)))
+
+#create an identity matrix
+print(np.eye(3))

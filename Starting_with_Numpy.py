@@ -55,3 +55,10 @@ print(x3.ndim)
 print(x3.shape)
 print(x3.size)
 
+
+#Array Indexing
+#The important thing to remember is that indexing in python starts at zero.
+x1=np.array([3,2,1,2,4,6,4,32])
+print(x1)
+
+

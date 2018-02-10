@@ -124,8 +124,8 @@ print(np.concatenate([grid,grid]))
 #define row-wise or column-wise matrix via axis parameter
 print(np.concatenate([grid,grid],axis=1))
 
-
-
+#np.vstack or np.hstack
+print(np.vstack([x,grid]))
 
 
 

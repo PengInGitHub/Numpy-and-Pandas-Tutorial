@@ -177,6 +177,15 @@ df.loc['20130202':'20130204','A':'C']
 #slice based on index of rows
 df.iloc[3]#return 4th row,index is 3rd
 
+#slice by a specfic range of rows and cols
+df.iloc[2:5,0:2]
+
+#slice by a specfic index of rows and cols, use list
+df.iloc[[2,5],[0,2]]
+
+#Boolean indexing based on column values 
+df[df.A>1]
+df[(df.A>1)&(df.C<1)]
 
 
 

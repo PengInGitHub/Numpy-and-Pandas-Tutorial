@@ -36,7 +36,7 @@ cat.apply(pd.Series.nunique)
 
 #Workclass
 train.workclass.value_counts(sort=True)
-
+train.workclass.fillna(' Private',inplace=True)
 
 
 

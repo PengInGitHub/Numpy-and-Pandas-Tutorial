@@ -98,7 +98,8 @@ data.rename(columns={'One':'One_p'},inplace=True)
 data.rename(index={'Ohio':'SanF'},inplace=True)
 
 
-
+#use string functions
+data.rename(index=str.upper,columns=str.title,inplace=True)
 
 
 

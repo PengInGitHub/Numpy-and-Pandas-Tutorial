@@ -53,14 +53,14 @@ train.target.value_counts()/train.shape[0]#76% is under 50k
 #create cross tab of target variable with critical variable
 pd.crosstab(train.education,train.target,margins=True)/train.shape[0]
 
-#encode categorical variables
+#encode categorical variablesvia sklearn.preprocessing
 for x in train.columns:
-    if train[x].dtype == 'type':
+    if train[x].dtype == 'object':
         lbl=preprocessing.LabelEncoder()
         lbl.fit(list(train[x].values))
         train[x]=lbl.transform(list(train[x].values))
 
-
+#all the variables have been converted to numeric, including the target variable
 
 
 

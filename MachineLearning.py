@@ -42,7 +42,9 @@ train.workclass.fillna(' Private',inplace=True)
 train.occupation.value_counts(sort=True)
 train.occupation.fillna(' Prof-specialty',inplace=True)
 
-
+#Native Country
+train['native.country'].value_counts(sort=True)
+train['native.country'].fillna(' United-States',inplace=True)
 
 
 

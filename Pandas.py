@@ -127,6 +127,47 @@ new_cuts=pd.cut(ages,bins,labels=bin_name)
 pd.value_counts(new_cuts)
 
 
+#group and create pivots
+df = pd.DataFrame({'key1' : ['a', 'a', 'b', 'b', 'a'],
+                   'key2' : ['one', 'two', 'one', 'two', 'one'],
+                   'data1' : np.random.randn(5),
+                   'data2' : np.random.randn(5)})
+
+#group one valriable by another variable
+grouped=df['data1'].groupby(df['key1'])
+
+#do operations
+grouped.max()
+grouped.mean()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

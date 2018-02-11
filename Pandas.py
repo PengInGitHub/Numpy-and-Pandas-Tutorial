@@ -102,4 +102,39 @@ data.rename(index={'Ohio':'SanF'},inplace=True)
 data.rename(index=str.upper,columns=str.title,inplace=True)
 
 
+#Categorize continuous variables
+ages = [20, 22, 25, 27, 21, 23, 37, 31, 61, 45, 41, 32]
+
+#define bins as a list
+bins=[18,25,35,60,100]
+cats=pd.cut(ages,bins)
+
+#include the right bin value
+cats=pd.cut(ages,bins,right=False)
+
+#pandas assigns an encoding to categorical variables
+cats.labels#FutureWarning: 'labels' is deprecated. Use 'codes' instead
+cats.codes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

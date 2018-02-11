@@ -169,6 +169,8 @@ df['20130202':'20130204']
 #slice based on column names
 df.loc[:,['A','B']]
 
+#slice based on both row index and column names
+df.loc['20130202':'20130204',['A','C']]
 
 
 

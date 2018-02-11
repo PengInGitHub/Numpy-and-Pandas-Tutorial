@@ -166,6 +166,9 @@ df[:2]#return first two rows
 #slice based on index value
 df['20130202':'20130204']
 
+#slice based on column names
+df.loc[:,['A','B']]
+
 
 
 

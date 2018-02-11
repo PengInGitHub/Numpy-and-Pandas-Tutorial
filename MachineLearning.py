@@ -38,8 +38,9 @@ cat.apply(pd.Series.nunique)
 train.workclass.value_counts(sort=True)
 train.workclass.fillna(' Private',inplace=True)
 
-
-
+#Occuation
+train.occupation.value_counts(sort=True)
+train.occupation.fillna(' Prof-specialty',inplace=True)
 
 
 

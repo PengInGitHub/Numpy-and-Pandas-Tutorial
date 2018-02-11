@@ -23,3 +23,10 @@ nans/len(train)#7% rows have missing values in train
 
 nans=test.shape[0]-test.dropna().shape[0]
 nans/len(test)#7% rows have missing values in test
+
+#check which columns have missing values.
+train.isnull().sum()#only 3 columns have missing values
+
+#count the unique values from each categorical variables
+cat=train.select_dtypes(include=['O'])#object
+cat.apply(pd.Series.nunique)

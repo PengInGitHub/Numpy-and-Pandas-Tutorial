@@ -14,3 +14,6 @@ clf.fit(X_train,y_train)
 
 #predict
 prediction=clf.predict(X_test)
+
+#calculate accuracy
+acc=accuracy_score(np.array(y_test),prediction)#0.852

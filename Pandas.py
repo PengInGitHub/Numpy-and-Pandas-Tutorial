@@ -163,6 +163,9 @@ df
 #slice data frame: n row
 df[:2]#return first two rows
 
+#slice based on index value
+df['20130202':'20130204']
+
 
 
 

@@ -116,9 +116,15 @@ cats=pd.cut(ages,bins,right=False)
 cats.labels#FutureWarning: 'labels' is deprecated. Use 'codes' instead
 cats.codes
 
+#check how many observations fall under each bin
+pd.value_counts(cats)
 
+#name each category
+bin_name=['Youth','YoughAdult','MiddleAge','Senior']
+new_cuts=pd.cut(ages,bins,labels=bin_name)
 
-
+#count statistics
+pd.value_counts(new_cuts)
 
 
 

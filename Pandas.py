@@ -195,6 +195,8 @@ filtered_df = df[df.A.notnull()]
 df2=df.copy()
 df2['E']=[1,2,3,4,5,6]
 
+#select rows based on column values
+df2[df2.E.isin([3,4])]
 
 
 

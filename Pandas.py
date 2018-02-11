@@ -202,6 +202,10 @@ df2[df2.E.isin([3,4])]
 df2[~df2.E.isin([3,4])]
 
 
+#use a query method to select columns based on a criterion
+df.query('A>C')
+
+
 
 
 

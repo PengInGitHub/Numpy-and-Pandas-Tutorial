@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+from sklearn import preprocessing
 
 #data set from UCI Machine Learning Repository
 #https://s3-ap-southeast-1.amazonaws.com/he-public-data/datafiles19cdaf8.zip
@@ -46,6 +47,18 @@ train.occupation.fillna(' Prof-specialty',inplace=True)
 train['native.country'].value_counts(sort=True)
 train['native.country'].fillna(' United-States',inplace=True)
 
+#check target vairable distrobution
+train.target.value_counts()/train.shape[0]#76% is under 50k
+
+#create cross tab of target variable with critical variable
+pd.crosstab(train.education,train.target,margins=True)/train.shape[0]
+
+#encode categorical variables
+for x in train.columns:
+    if train[x].dtype == 'type':
+        lbl=preprocessing.LabelEncoder()
+        lbl.fit(list(train[x].values))
+        train[x]=lbl.transform(list(train[x].values))
 
 
 

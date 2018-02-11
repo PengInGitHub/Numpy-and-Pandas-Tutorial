@@ -187,6 +187,10 @@ df.iloc[[2,5],[0,2]]
 df[df.A>1]
 df[(df.A>1)&(df.C<1)]
 
+#filter not null
+filtered_df = df[df['A'].notnull()]
+filtered_df = df[df.A.notnull()]
+
 
 
 

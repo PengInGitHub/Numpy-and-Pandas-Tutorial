@@ -13,3 +13,13 @@ train.info()
 print(train.shape)#(32561, 15)
 print(test.shape)#(16281, 15)
 
+#have a glimpse of the data set
+train.head()
+
+#check missing values
+#how many rows have missing values
+nans=train.shape[0]-train.dropna().shape[0]
+nans/len(train)#7% rows have missing values in train
+
+nans=test.shape[0]-test.dropna().shape[0]
+nans/len(test)#7% rows have missing values in test

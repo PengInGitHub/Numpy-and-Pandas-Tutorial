@@ -59,8 +59,10 @@ for x in train.columns:
         lbl=preprocessing.LabelEncoder()
         lbl.fit(list(train[x].values))
         train[x]=lbl.transform(list(train[x].values))
-
 #all the variables have been converted to numeric, including the target variable
+
+
+#Building a Random Forest Model        
 
 
 

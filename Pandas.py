@@ -209,8 +209,13 @@ df.query('A>C')
 df.query('A>C | B<A')
 
 
+#pivot table
+data=pd.DataFrame({'group':['a','c','b','c','c','a'],
+                                   'ounces':[11,22,31,3,2,45]})
 
+data.pivot_table(values='ounces',index='group',aggfunc='count')
 
+data.pivot_table(values='ounces',index='group',aggfunc=np.mean)
 
 
 

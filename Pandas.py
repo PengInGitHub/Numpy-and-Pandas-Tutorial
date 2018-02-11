@@ -174,6 +174,9 @@ df.loc['20130202':'20130204',['A','C']]
 #one more example
 df.loc['20130202':'20130204','A':'C']
 
+#slice based on index of rows
+df.iloc[3]#return 4th row,index is 3rd
+
 
 
 

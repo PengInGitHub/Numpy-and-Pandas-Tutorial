@@ -140,6 +140,10 @@ grouped=df['data1'].groupby(df['key1'])
 grouped.max()
 grouped.mean()
 
+#one more example
+grouped=df['data2'].groupby(df['key2'])
+grouped.max()
+grouped.mean()
 
 
 

@@ -205,6 +205,8 @@ df2[~df2.E.isin([3,4])]
 #use a query method to select columns based on a criterion
 df.query('A>C')
 
+#use OR condition
+df.query('A>C | B<A')
 
 
 

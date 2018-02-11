@@ -160,6 +160,9 @@ df
 2013-02-07  0.089068  0.480445 -1.493795 -0.025732
 '''
 
+#slice data frame: n row
+df[:2]#return first two rows
+
 
 
 

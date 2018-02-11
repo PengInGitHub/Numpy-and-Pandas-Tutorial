@@ -191,6 +191,9 @@ df[(df.A>1)&(df.C<1)]
 filtered_df = df[df['A'].notnull()]
 filtered_df = df[df.A.notnull()]
 
+#copy the data set
+df2=df.copy()
+df2['E']=[1,2,3,4,5,6]
 
 
 
